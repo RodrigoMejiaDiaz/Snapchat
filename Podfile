@@ -18,7 +18,9 @@ target 'Snapchat' do
     # Pods for testing
   end
 
+  pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
 end

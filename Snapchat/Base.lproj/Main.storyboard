@@ -63,9 +63,21 @@
                                     <action selector="IniciarSessionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFT-gU-ox3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fho-nW-akt">
+                                <rect key="frame" x="20" y="524" width="374" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9iv-TG-6wl"/>
+                                </constraints>
+                                <state key="normal" title="Google "/>
+                                <connections>
+                                    <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNT-ea-6mG"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fho-nW-akt" firstAttribute="top" secondItem="H1A-4G-k0y" secondAttribute="bottom" constant="30" id="5zK-pf-Xdt"/>
                             <constraint firstItem="H1A-4G-k0y" firstAttribute="top" secondItem="i7p-tP-XXu" secondAttribute="bottom" constant="30" id="B1U-Y8-lrd"/>
                             <constraint firstItem="H1A-4G-k0y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8d-rE-Czi"/>
                             <constraint firstItem="0n1-wB-Xyh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Irc-fM-IYJ"/>
@@ -75,14 +87,18 @@
                             <constraint firstItem="gsc-ct-QFT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TL5-Gj-ieD"/>
                             <constraint firstItem="3iE-hC-25M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UHe-km-pOu"/>
                             <constraint firstItem="vpb-HS-NWS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZf-Ll-qQT"/>
+                            <constraint firstItem="fho-nW-akt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ygh-gD-mXJ"/>
                             <constraint firstItem="0n1-wB-Xyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1M-j8-h6T"/>
                             <constraint firstItem="i7p-tP-XXu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXx-RV-NOS"/>
                             <constraint firstItem="vpb-HS-NWS" firstAttribute="top" secondItem="0n1-wB-Xyh" secondAttribute="bottom" constant="25" id="fsR-nT-qhI"/>
+                            <constraint firstItem="fho-nW-akt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyM-ef-9Tp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fho-nW-akt" secondAttribute="trailing" constant="20" id="u8h-6l-GsP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="3iE-hC-25M" id="Muw-Fj-L1z"/>
+                        <outlet property="googleButton" destination="fho-nW-akt" id="LmY-PA-xqL"/>
                         <outlet property="passwordTextField" destination="i7p-tP-XXu" id="WSO-Ps-NDo"/>
                     </connections>
                 </viewController>
